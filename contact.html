@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="Tell Lumina about your next digital project.">
+  <title>Contact — Lumina</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Lumina home">
+      <span class="brand-mark" aria-hidden="true">L</span>
+      <span>Lumina</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main contact-layout">
+    <section class="contact-intro">
+      <div class="eyebrow">Start a conversation</div>
+      <h1>Have an idea?<br><span>Let’s hear it.</span></h1>
+      <p>
+        Tell us what you’re imagining, even if it’s still a sketch on a napkin.
+        We’ll get back to you within two working days.
+      </p>
+      <div class="contact-details">
+        <div>
+          <span class="detail-label">Prefer email?</span>
+          <a href="mailto:hello@lumina.studio">hello@lumina.studio</a>
+        </div>
+        <div>
+          <span class="detail-label">Based in</span>
+          <span>Lagos · Working worldwide</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-card glass" aria-labelledby="form-title">
+      <h2 id="form-title">Tell us about your project</h2>
+      <form id="contact-form">
+        <div class="field-row">
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="Ada Lovelace" autocomplete="name" required>
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="ada@example.com" autocomplete="email" required>
+          </label>
+        </div>
+        <label>
+          I’m interested in
+          <select name="service" required>
+            <option value="" selected disabled>Choose a service</option>
+            <option>Brand &amp; strategy</option>
+            <option>Web design</option>
+            <option>Development</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>
+          A little about the project
+          <textarea name="message" rows="5" placeholder="What are you making, and what would success look like?" required></textarea>
+        </label>
+        <button class="button button-primary submit-button" type="submit">
+          Send enquiry <span aria-hidden="true">↗</span>
+        </button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span data-year></span> Lumina Studio</span>
+    <a href="about.html">About the studio</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
